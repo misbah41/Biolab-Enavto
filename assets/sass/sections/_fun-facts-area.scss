@@ -1,0 +1,85 @@
+/*------------------------------
+	## Fun Facts Area
+-------------------------------*/
+.fun-facts-area {
+     background: #111111;
+     .video-area {
+          position: relative;
+          .video-play-btn {
+               position: absolute;
+               left: 0;
+               right: 0;
+               top: 50%;
+               transform: translateY(-50%);
+               text-align: center;
+               width: 140px;
+               height: 140px;
+               line-height: 140px;
+               border-radius: 50%;
+               background: $white;
+               margin: auto;
+               font-size: 20px;
+               color: var(--main-color);
+               transition: $transition;
+               &::before {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    border-radius: 50%;
+                    transform: scale(1.3);
+                    border: 2px solid rgba(255, 255, 255, .3);
+               }
+               &:hover {
+                    color: $white;
+                    background: var(--main-color);
+               }
+          }
+     }
+     .fun-fact-info {
+          padding: 50px 30px 50px 70px ;
+     }
+     .fun-fact-content {
+          p {
+               font-size: 18px;
+               line-height: 30px;
+               color: #999999;
+          }
+     }
+     .feature-area {
+          .single-feature {
+               display: flex;
+               align-items: center;
+               .feature-left {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 120px;
+                    height: 120px;
+                    background: $white;
+                    margin-right: 15px;
+                    h2 {
+                         font-size: 50px;
+                         font-weight: 700;
+                         color: #111111;
+                         margin: 0;
+                         line-height: 1;
+                         sub {
+                              bottom: 0;
+                              font-size: 18px;
+                              color: var(--main-color);
+                         }
+                    }
+               }
+               .feature-title {
+                    font-size: 18px;
+                    line-height: 26px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    color: $white;
+               }
+          }
+     }
+}

@@ -1,0 +1,94 @@
+/*----------------------------------------------
+    # hero-banner-area
+----------------------------------------------*/
+.hero-banner-area {
+    padding: 349px 0 222px;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: right;
+    position: relative;
+    background-color: #000;
+    .banner-text {
+        .banenr-subtitle {
+            position: relative;
+            margin-bottom: 12px;
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: capitalize;
+            color: #999999;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 60px;
+                height: 10px;
+                width: 60px;
+                background: url('../img/line.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        .banenr-title {
+            margin-bottom: 35px;
+            font-size: 65px;
+            line-height: 80px;
+            letter-spacing: 1.4px;
+            font-weight: 700;
+            text-transform: capitalize;
+            color: $white;
+            span {
+                color: var(--main-color);
+                -webkit-text-fill-color: transparent;
+				-webkit-text-stroke-width: 1px;
+            }
+        }
+        .banner-content {
+            margin-bottom: 44px;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 400;
+            color :#999999;
+        }
+    }
+}
+.banner-side-area {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -15.9%;
+    top: 51.4%;
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            background-color: rgba( 255, 255, 255, 0.059 );
+            box-shadow: 0px 16px 32px 0px rgba( 0, 0, 0, 0.059 );
+            font-size: 16px;
+            color: #fff;
+            height: 60px;
+            line-height: 60px;
+            padding: 0 31px;
+            margin-left: 20px;
+            &:first-child {
+                margin-left: 0;
+            }
+            ul {
+                li {
+                    box-shadow: none;
+                    background: none;
+                    padding: 0 8px;
+                    margin: 0;
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+
+            }
+        }
+    }
+}

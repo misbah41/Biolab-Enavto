@@ -1,0 +1,22 @@
+/*----------------------------------------
+  ## Lets Work
+----------------------------------------*/
+.lets-work-area {
+     padding: 130px 0;
+     background: url('../img/lets-work-bg.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     .lets-work-title {
+          font-size: 6vw;
+          line-height: 1;
+          font-weight: 700;
+          color: $white;
+          text-align: center;
+          span {
+               color: var(--main-color);
+               -webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 2px;
+          }
+     }
+}

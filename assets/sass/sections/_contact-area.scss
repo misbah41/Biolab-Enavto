@@ -1,0 +1,47 @@
+/*------------------------------
+	## Contact Area
+-------------------------------*/
+.contact-area {
+     .contact-details {
+          ul {
+               margin: 0;
+               padding: 0;
+               li {
+                    list-style: none;
+                    padding: 20px 0;
+                    border-bottom: 1px solid #e4e4e4;
+                    &:first-child {
+                         padding-top: 0;
+                    }
+                    &:last-child {
+                         border-bottom: none;
+                    }
+                    .icon {
+                         margin-right: 25px;
+                         img {
+                              width: 40px;
+                         }
+                    }
+                    h4 {
+                         margin: 0;
+                         margin-bottom: 8px;
+                         font-size: 18px;
+                         font-weight: 700;
+                         text-transform: capitalize;
+                         color: #111111;
+                    }
+                    p {
+                         margin: 0;
+                         font-size: 14px;
+                         font-weight: 400;
+                         color: #777777;
+                         line-height: 1;
+                    }
+               }
+          }
+     }
+     .contact-right {
+          padding: 80px 60px;
+          background: #f7f7f7;
+     }
+}

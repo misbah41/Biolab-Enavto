@@ -1,0 +1,170 @@
+/*---------------------
+    ## About Area 
+----------------------*/
+.about-area {
+     background: #f6f6f6;
+     .about-info {
+          p {
+               margin-bottom: 15px;
+               font-size: 18px;
+               line-height: 30px;
+               font-weight: 400;
+               color: #777777;
+          }
+          .single-progressbar {
+               margin-top: 40px;
+          }
+     }
+}
+.progress-item .progress-count-wrap {
+position: absolute;
+top: -35px;
+right: -19px;
+}
+.progress-item.add-progress-start .progress-count-wrap {
+position: absolute;
+top: -35px;
+right: -5px;
+}
+.progress-item.add-progress-full .progress-count-wrap {
+position: absolute;
+top: -35px;
+right: 11px;
+}
+.progress-item .progress-count.counting {
+font-weight: 400;
+font-size: 18px;
+color: #f15060;
+font-family: var(--heading-font);
+}
+.progress-item .counting-icons {
+padding-top: 2px;
+padding-left: 2px;
+position: absolute;
+display: inline-block;
+font-weight: 400;
+font-size: 18px;
+color: #f15060;
+}
+.progress-item .progress-bg {
+position: relative;
+height: 4px;
+border-radius: 30px;
+background: #E0E0E0;
+}
+.progress-item .progress-bg .progress-rate {
+position: absolute;
+left: 0;
+top: 0;
+width: 0;
+height: 100%;
+border-radius: 30px;
+background: #f15060;
+transition: 2.5s;
+}
+/***pricing-area***/
+.pricing-area {
+     position: relative;
+}
+.single-pricing-wrap {
+     border: 2px solid #e9e9e9;
+     padding: 60px;
+     margin-bottom: 30px;
+     .price {
+          border-bottom: 1px solid rgb( 234, 234, 234 );
+          margin-top: -7px;
+          padding-bottom: 10px;
+          margin-bottom: 31px;
+          span {
+               display: inline-block;
+          }
+          h2 {
+               display: inline-block;
+               font-size: 60px;
+          }
+     }
+     .pricing-list {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          margin-bottom: 33px;
+          li {
+               font-size: 16px;
+               &.unable {
+                    color: #cdcdcd;
+               }
+               i {
+                    margin-right: 20px;
+               }
+          }
+     }
+     .more-work-btn {
+          width: 100%;
+     }
+     .primary-btn {
+          padding: 15px 0;
+          i {
+               margin-left: 0;
+               position: initial;
+          }
+     }
+}
+.pricing-tabs {
+     .nav-tabs {
+          display: inline-block;
+          border: none;
+          .nav-item {
+               border: none;
+               border-radius: 0;
+               display: inline-block;
+               height: 60px;
+               line-height: 60px;
+               padding: 0px;
+               box-shadow: 0px 0 32px rgb(0 0 0 / 6%);
+               margin-left: -5px;
+               color: var(--heading-color);
+               width: 130px;
+               text-align: center;
+               &.active {
+                    background: var(--main-color);
+                    color: #fff;
+               }
+          }
+     }
+}
+/***experienced-area***/
+.single-experienced-wrap {
+     border: 2px solid rgb( 242, 242, 242 );
+     box-shadow: 8px 13.856px 32px 0px rgba( 0, 0, 0, 0.06 );
+     width: 166px;
+     height: 166px;
+     display: block;
+     text-align: center;
+     margin: auto;
+     transition: 0.5s;
+     margin-bottom: 30px;
+     .thumb {
+          margin-top: 30px;
+          margin-bottom: 16px;
+          img {
+               height: 70px;
+               filter: contrast(0.01);
+               transition: 0.5s;
+          }
+     }
+     h6 {
+          color: var(--paragraph-color);
+          transition: 0.5s;
+     }
+     &:hover {
+          box-shadow: none;
+          h6 {
+               color: var(--heading-color);
+          }
+          .thumb {
+               img {
+                    filter: contrast(1);
+               }
+          }
+     }
+}

@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------
+	## Brand Logo Area
+--------------------------------------------------------------*/
+.brand-logo-area {
+     .brand-list {
+          display: flex;
+          justify-content: space-between;
+          flex-flow: row wrap;
+          margin: 0;
+          padding: 0;
+          border-bottom: 1px solid #eeeeee;
+          &:last-child {
+               border-bottom: none;
+          }
+          .single-brand {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               width: 20%;
+               height: 140px;
+               list-style: none;
+               text-align: center;
+               border-left: 1px solid #eeeeee;
+               &:first-child {
+                    text-align: left;
+                    border-left: none;
+                    justify-content: start;
+               }
+               &:last-child {
+                    text-align: right;
+                    justify-content: flex-end;
+               }
+          }
+     }
+}

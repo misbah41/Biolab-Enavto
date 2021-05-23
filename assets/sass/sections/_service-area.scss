@@ -1,0 +1,56 @@
+/*----------------------------------------
+  ## Service Area
+----------------------------------------*/
+.service-area {
+  .single-service {
+    margin-bottom: 30px;
+    .service-thumbnail {
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: $transition;
+      }
+      .service-overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, .6);
+        transition: $transition;
+        opacity: 0;
+        transform: scale(.8);
+        .view-btn {
+          color: $white;
+          font-weight: 600;
+          font-size: 22px;
+          transition: $transition;
+          &:hover {
+            color: var(--main-color);
+          }
+        }
+      }
+    }
+    &:hover {
+      .service-thumbnail {
+        img {
+          transform: scale(1.1) rotate(-7deg);
+        }
+        .service-overlay {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+  .more-work-btn {
+    transform: translateY(-15px);
+  }
+}

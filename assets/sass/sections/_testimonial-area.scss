@@ -1,0 +1,75 @@
+/*-----------------------------
+    ## Testimonial Area 
+-----------------------------*/
+.testimonial-area {
+    
+     .testimonial-slide {
+          position: relative;
+          z-index: 1;
+          &::before {
+               position: absolute;
+               left: 0;
+               right: 0;
+               margin: auto;
+               content: '';
+               background: url('../img/testimonial-bg-icon.png');
+               width: 500px;
+               height: 470px;
+               background-repeat: no-repeat;
+               background-position: center;
+               z-index: -1;
+               background-size: 100%;
+               top: -50px;
+          }
+          .owl-controls {
+               .owl-nav {
+                    div {
+                         position: absolute;
+                         top: 50%;
+                         transform: translateY(-50%);
+                         width: 60px;
+                         height: 60px;
+                         line-height: 60px;
+                         background: $white;
+                         text-align: center;
+                         box-shadow: 16px 0 32px rgba(0, 0 , 0, .10);
+                         font-size: 19px;
+                         transition: $transition;
+                         &:hover {
+                              background: var(--main-color);
+                              color: $white;
+                         }
+                    }
+                    .owl-prev {
+                         left: -100px;
+                    }
+                    .owl-next {
+                         right: -100px;
+                    }
+               }
+          }
+     }
+     .single-testimonial {
+          .clint-info {
+               text-align: left;
+               .clint-img {
+                    img {
+                         width: 60px;
+                         height: 60px;
+                    }
+               }
+               .clint-name {
+                    margin: 0;
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    color: #111111;
+               }
+               .clint-pro {
+                    margin: 0;
+                    font-size: 14px;
+                    color: #777777;
+               }
+          }
+     }
+}

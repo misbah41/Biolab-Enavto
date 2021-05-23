@@ -1,0 +1,98 @@
+/*
+Theme Name: Biolab
+Theme URI: 
+Author: 
+Author URI: 
+Description: Biolab is a business website template
+Version: 1.0.0
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+# Typography
+# Normalize
+# Accessibility
+# Globals
+# Alignments
+# Clearings
+# Posts and pages
+# Captions
+# Galleries
+# Unit test
+# guterberg
+# Gutenberg	Default Style
+# Block Color Palette Colors
+# Sections
+    ## Breadcrumb
+    ## Comments
+    ## Widgets
+    ## Nav Bar
+    ## Info Bar
+    ## Header
+    ## Footer Area
+    ## Error 404 Area
+    ## Hero Banner
+    ## About Area
+    ## Work Progress
+    ## Service Area
+    ## Lets Work
+    ## Testimonial Area
+    ## Brand Logo Area
+    ## Fun Facts Area
+    ## Contact Area
+
+
+
+# Elements
+    ## Back Top
+    ## Preloader
+    ## Search Popup
+    ## Video Popup
+    ## Button
+    ## Section Title
+    ## Contact Form
+    ## Blog Area
+    
+
+--------------------------------------------------------------*/
+
+//== Global Design
+@import "global/_mixins";
+@import "global/_variables";
+@import "global/_global";
+@import "global/_gutenberg";
+
+//== Pages
+
+//== Sections
+@import "sections/_breadcrumb";
+@import "sections/_comments";
+@import "sections/_widgets";
+@import "sections/_navbar";
+@import "sections/_info_bar";
+@import "sections/_header";
+@import "sections/_footer";
+@import "sections/_error_404";
+@import "sections/hero-banner";
+@import "sections/about-area";
+@import "sections/work-progress";
+@import "sections/service-area";
+@import "sections/lets-work";
+@import "sections/testimonial-area";
+@import "sections/brand-logo-area";
+@import "sections/fun-facts-area";
+@import "sections/contact-area";
+@import "sections/blog-area";
+@import "sections/home-2";
+
+
+//== Elements
+@import "elements/_back_top";
+@import "elements/_preloader";
+@import "elements/_search_popup";
+@import "elements/_button";
+@import "elements/_section_title";
+@import "elements/contact-form";
+

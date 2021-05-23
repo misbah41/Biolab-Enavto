@@ -1,0 +1,48 @@
+/*-------------------------
+    Footer Area
+-------------------------*/
+.footer-top{
+    background-color: #111111;
+}
+
+.footer-bottom{
+    background-color: #0a0a0a;
+    padding: 25px 0;
+    .copyright-area {
+        p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 400;
+            color: #999999;
+            a {
+                color: $white;
+                font-weight: 600;
+                transition: $transition;
+                &:hover {
+                    color: var(--hover-color);
+                }
+            }
+        }
+    }
+    .footer-social-media {
+        margin: 0;
+        padding: 0;
+        text-align: right;
+        li {
+            display: inline-block;
+            list-style: none;
+            margin-right: 15px;
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                color: $white;
+                font-size: 16px;
+                transition: $transition;
+                &:hover {
+                    color: var(--hover-color);
+                }
+            }
+        }
+    }
+}
